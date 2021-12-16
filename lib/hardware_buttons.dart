@@ -13,7 +13,7 @@ const EventChannel _homeButtonEventChannel =
 const EventChannel _lockButtonEventChannel =
     EventChannel(_LOCK_BUTTON_CHANNEL_NAME);
 
-Stream<VolumeButtonEvent> _volumeButtonEvents;
+late Stream<VolumeButtonEvent> _volumeButtonEvents;
 
 /// A broadcast stream of volume button events
 Stream<VolumeButtonEvent> get volumeButtonEvents {
@@ -25,7 +25,7 @@ Stream<VolumeButtonEvent> get volumeButtonEvents {
   return _volumeButtonEvents;
 }
 
-Stream<HomeButtonEvent> _homeButtonEvents;
+late Stream<HomeButtonEvent> _homeButtonEvents;
 
 /// A broadcast stream of home button events
 Stream<HomeButtonEvent> get homeButtonEvents {
@@ -37,7 +37,7 @@ Stream<HomeButtonEvent> get homeButtonEvents {
   return _homeButtonEvents;
 }
 
-Stream<LockButtonEvent> _lockButtonEvents;
+late Stream<LockButtonEvent> _lockButtonEvents;
 
 /// A broadcast stream of lock button events
 Stream<LockButtonEvent> get lockButtonEvents {
